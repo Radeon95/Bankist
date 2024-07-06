@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel=" icon" type="image/png" href="icon.png" />
+    <title>Bank Account P2646750</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- TOP NAVIGATION -->
+    <nav>
+      <p class="welcome">Log in to get started</p>
+      <img src="logo.png" alt="Logo" class="logo" />
+      <!-- LOGIN -->
+      <form class="login">
+        <input
+          type="text"
+          placeholder="User"
+          class="login__input login__input--user"
+        />
+        <!-- Password (PIN) -->
+        <input
+          type="text"
+          placeholder="PIN"
+          maxlength="4"
+          class="login__input login__input--pin"
+        />
+        <button class="login__btn">&rarr;</button>
+      </form>
+    </nav>
+
+    <div class="gallery">
+      <figure class="card">
+        <img src="images/img1.webp" alt="Lakeview Elegance preview" />
+      </figure>
+      <figure class="card">
+        <img src="images/img2.webp" alt="Skyline Oasis preview" />
+      </figure>
+      <figure class="card">
+        <img src="images/img3.webp" alt="Vista Paradiso preview" />
+      </figure>
+      <figure class="card">
+        <img src="images/img4.webp" alt="Villa Verde preview" />
+      </figure>
+    </div>
+
+    <div class="operations">
+      <div class="operations__tab-container">
+        <button
+          class="btn operations__tab operations__tab--1 operations__tab--active"
+          data-tab="1"
+        >
+          <span>01</span>Instant Transfers
+        </button>
+        <button class="btn operations__tab operations__tab--2" data-tab="2">
+          <span>02</span>Instant Loans
+        </button>
+        <button class="btn operations__tab operations__tab--3" data-tab="3">
+          <span>03</span>Instant Closing
+        </button>
+      </div>
+      <div
+        class="operations__content operations__content--1 operations__content--active"
+      >
+        <div class="operations__icon operations__icon--1">
+          <svg>
+            <use xlink:href="images/icons.svg#icon-upload"></use>
+          </svg>
+        </div>
+        <h5 class="operations__header">
+          Tranfser money to anyone, instantly! No fees, no BS.
+        </h5>
+        <p>
+          Experience the ultimate convenience with our revolutionary money
+          transfer service. At Bankis, we make it easy and instantaneous to send
+          money to anyone, anywhere. Forget about hidden fees or complex
+          procedures—our platform is straightforward and user-friendly. With
+          just a few clicks, your money is on its way to the recipient, ensuring
+          a seamless transaction experience. Join us and embrace the simplicity
+          of hassle-free transfers, because when it comes to your money, we
+          believe in transparency and efficiency.
+        </p>
+      </div>
+
+      <div class="operations__content operations__content--2">
+        <div class="operations__icon operations__icon--2">
+          <svg>
+            <use xlink:href="images/icons.svg#icon-home"></use>
+          </svg>
+        </div>
+        <h5 class="operations__header">
+          Buy a home or make your dreams come true, with instant loans.
+        </h5>
+        <p>
+          Unlock the door to your dreams with Bankis' instant loan services.
+          Whether you're looking to purchase your first home or fund a lifelong
+          dream, our fast and efficient loan process ensures you have the
+          financial support you need without the wait. Our competitive rates and
+          straightforward terms mean you can make big moves confidently and with
+          ease. Dive into your next big adventure with a partner that's as
+          committed to your goals as you are. Start with Bankis, where your
+          aspirations meet our innovation.
+        </p>
+      </div>
+      <div class="operations__content operations__content--3">
+        <div class="operations__icon operations__icon--3">
+          <svg>
+            <use xlink:href="images/icons.svg#icon-user-x"></use>
+          </svg>
+        </div>
+        <h5 class="operations__header">
+          No longer need your account? No problem! Close it instantly.
+        </h5>
+        <p>
+          At Bankis, we understand that your needs can change. That's why we
+          offer a hassle-free account closure process. If you decide that you no
+          longer need our services, you can close your account instantly with
+          just a few clicks. No long waits, no cumbersome paperwork—just a
+          simple, straightforward process that respects your time and decisions.
+          Trust Bankis to provide you with flexibility and control over your
+          financial journey, even when it's time to say goodbye.
+        </p>
+      </div>
+    </div>
+
+    <main class="app">
+      <!-- BALANCE -->
+      <div class="balance">
+        <div>
+          <p class="balance__label">Current balance</p>
+          <p class="balance__date">
+            As of <span class="date">11/02/2024</span>
+          </p>
+        </div>
+        <p class="balance__value">1000£</p>
+      </div>
+
+      <!-- MOVEMENTS -->
+      <div class="movements">
+        <div class="movements__row">
+          <div class="movements__type movements__type--deposit">2 deposit</div>
+          <div class="movements__date">3 days ago</div>
+          <div class="movements__value">4 000£</div>
+        </div>
+        <div class="movements__row">
+          <div class="movements__type movements__type--withdrawal">
+            1 withdrawal
+          </div>
+          <div class="movements__date">24/01/2037</div>
+          <div class="movements__value">-378£</div>
+        </div>
+      </div>
+      <!-- SUMMARY -->
+      <div class="summary">
+        <p class="summary__label">In</p>
+        <p class="summary__value summary__value--in">0000£</p>
+        <p class="summary__label">Out</p>
+        <p class="summary__value summary__value--out">0000£</p>
+        <p class="summary__label">Interest</p>
+        <p class="summary__value summary__value--interest">0000£</p>
+        <button class="btn--sort">&downarrow; SORT</button>
+      </div>
+      <!-- OPERATION: TRANSFERS-->
+      <div class="operation operation--transfer">
+        <h2>Transfer money</h2>
+        <form class="form form--transfer">
+          <input type="text" class="form__input form__input--to" />
+          <input type="number" class="form__input form__input--amount" />
+          <button class="form__btn form__btn--transfer">&rarr;</button>
+          <label class="form__label">Transfer to</label>
+          <label class="form__label">Amount</label>
+        </form>
+      </div>
+
+      <!-- OPERATION: LOAN -->
+      <div class="operation operation--loan">
+        <h2>Request loan</h2>
+        <form class="form form--loan">
+          <input type="number" class="form__input form__input--loan-amount" />
+          <button class="form__btn form__btn--loan">&rarr;</button>
+          <label class="form__label form__label--loan">Amount</label>
+        </form>
+      </div>
+      <!-- OPERATION: CLOSE -->
+      <div class="operation operation--close">
+        <h2>Close account</h2>
+        <form class="form form--close">
+          <input type="text" class="form__input form__input--user" />
+          <input
+            type="password"
+            maxlength="6"
+            class="form__input form__input--pin"
+          />
+          <button class="form__btn form__btn--close">&rarr;</button>
+          <label class="form__label">Confirm user</label>
+          <label class="form__label">Confirm PIN</label>
+        </form>
+      </div>
+      <!-- LOGOUT TIMER -->
+      <p class="logout-timer">
+        You will be logged out in <span class="timer">05:00</span>
+      </p>
+    </main>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
